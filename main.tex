@@ -1,0 +1,144 @@
+% Future upgrades:
+% - Add banner across top where name is. 
+% - Add colour to cvtags 
+%     https://www.overleaf.com/learn/latex/Using_colours_in_LaTeX
+% - Add colour to icons, e.g. linkedin blue 
+% - Get more ideas
+%     https://www.kickresume.com/en/help-center/software-engineering-resume-samples/
+
+\documentclass[10pt,a4paper,ragged2e]{altacv}
+\usepackage[hidelinks]{hyperref} 
+
+% Change the page layout if you need to
+\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1cm,top=1cm,bottom=1.25cm}
+
+% Change the font if you want to, depending on whether
+% you're using pdflatex or xelatex/lualatex
+\ifxetexorluatex
+  % If using xelatex or lualatex:
+  \setmainfont{Carlito}
+\else
+  % If using pdflatex:
+  \usepackage[utf8]{inputenc}
+  \usepackage[T1]{fontenc}
+  \usepackage[default]{lato}
+\fi
+
+% Change the colours if you want to
+% \definecolor{VividPurple}{HTML}{000000}
+% \definecolor{SlateGrey}{HTML}{2E2E2E}
+% \definecolor{LightGrey}{HTML}{2E2E2E}
+% \colorlet{heading}{VividPurple}
+% \colorlet{accent}{VividPurple}
+% \colorlet{emphasis}{SlateGrey}
+% \colorlet{body}{LightGrey}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+% \renewcommand{\itemmarker}{{\small\textbullet}}
+% \renewcommand{\ratingmarker}{\faCircle}
+
+\begin{document}
+\name{Erfan Zafarani}
+\tagline{A driven Computer Science graduate with a background in sales \& Economics, experience in commercial and academic settings, and an unapologetically user-centred philosophy.}
+
+% Read over what you’ve written in your resume already, your resume summary or objective summarizes your selling points as a candidate.
+% Choose 2–3 of your best achievements and skills from your experience and skills sections.
+% Use this formula to construct your summary/objective:
+
+% Adjective + Job Title + Years of Experience + Achievements + Skills + What You Want to Do for the Employer
+
+\personalinfo{
+\color{Black}
+% email
+\href{mailto:erfan.zafarani.20@ucl.ac.uk}{  \email{erfan.zafarani.20@ucl.ac.uk}}
+% phone
+\href{tel:07411049904}{\phone{+44 74 11 049904}}
+% address
+\href{https://www.google.com/maps/place/London+NW9+5ZG,+UK/@51.5948386,-0.2406049,17z/data=!3m1!4b1!4m5!3m4!1s0x4876112a24589ecf:0xea28865c80f78dc6!8m2!3d51.5945227!4d-0.2382194}{  \location{Central London (flexible for the right opportunity)}}
+%  \homepage{robertonoel.com/}
+% linkedin
+\href{http://www.linkedin.com/in/erfanzafarani/}{\linkedin{Erfan Zafarani}}
+% GitHub
+\href{http://www.github.com/TketEZ/}{\github{tketEZ}}
+}
+
+%% Make the header extend all the way to the right, if you want.
+\begin{fullwidth}
+\makecvheader
+\end{fullwidth}
+
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+\AtBeginEnvironment{itemize}{\small}
+
+%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
+%% You can always just use \marginpar{...} if you do
+%% not need to align the top of the contents to any
+%% \cvsection title in the "main" bar.
+
+
+\cvsection[page1sidebar]{Projects}
+
+\cvproject{Performance AI: a cross-platform app for Microsoft (Thesis project)}
+\begin{itemize}
+    \item[] \cvtag{Xamarin} \cvtag{.NET} \cvtag{C\#}
+    \smallskip
+    \item Accessible dashboard showing real-time performance data gathered from Bluetooth-enabled devices. Will be carried out over summer 2021. \\
+\end{itemize}
+\divider 
+
+\cvproject{Portfolio portals for IBM and the NHS}
+% \cvtag{PHP} \cvtag{MySQL} \cvtag{Adobe XD} \cvtag{Adobe Dreamweaver}  \\
+% \smallskip
+% Part of a team of 3 developers that created custom web portals for IBM and the NHS to showcase research projects done in collaboration with universities. \\
+\begin{itemize}
+    \item[] \cvtag{PHP} \cvtag{MySQL} \cvtag{Adobe XD} \cvtag{Adobe Dreamweaver}  
+    \smallskip
+    \item Part of a team of 3 developers that created custom web portals for IBM and the NHS to showcase research projects they were doing with universities. 
+\end{itemize}
+\divider
+
+\cvproject{Mates: a social networking app with a mental health angle}
+\begin{itemize}
+    \item[] \cvtag{Ionic} \cvtag{TypeScript} \cvtag{Agile practices}
+    \smallskip
+    \item Side project with a small team of developers based on the idea that people tend to take better care of the ones they care about than themselves. Using 
+\end{itemize}
+\divider
+
+\cvproject{Model selection for a Machine Learning classification task}
+\begin{itemize}
+\item[] \cvtag{Python}  \cvtag{Sklearn} \cvtag{Numpy} \cvtag{Pandas} \cvtag{Seaborn} \cvtag{tabulate} \cvtag{SciPy} 
+\smallskip
+\item Coded performance metrics, cross-validation and hyperparameter tuning scripts for a Support Vector Machine in Python. 
+\end{itemize}
+\divider
+
+\cvproject{AuctionExpress: an auction website}
+\begin{itemize}
+    \item[] \cvtag{PHP} \cvtag{SQL} \cvtag{HTML} \cvtag{CSS} \cvtag{Bootstrap} \cvtag{JavaScript} 
+    \smallskip
+    \item Designed and coded registration feature and a recommendation engine, which used collaborative filtering to suggest new items to bid on based on the bids of users with similar bidding histories. 
+\end{itemize}
+
+\cvsection{Education}
+\cvevent{\textbf{MSc Computer Science}}{University College London}{ Sep 2020 - Sep 2021}{London, UK}
+\begin{itemize}
+    \item \textbf{Predicted grade:} Distinction (currently averaging around 80\%)
+    \item \textbf{Electives in}: Machine Learning, Software Engineering and Interaction Design. 
+\end{itemize}
+\divider
+
+\cvevent{\textbf{BSc Industrial Economics}}{University of Nottingham}{ Sep 2015 - Aug 2018}{Nottingham, UK}
+\begin{itemize}
+    \item \textbf{Grade achieved:} 2.1 (with honours)
+    \item \textbf{Study abroad:} 6 months in Ningbo, China.
+    % %%\smallskip
+    \item \textbf{Dissertation:} Econometric model investigating the relationship between home-ownership and inequality, using Stata and Tableau
+    % %%\smallskip
+    \item \textbf{Leadership positions:} Team leader in Enactus Nottingham; Vice president of AIESEC Nottingham.
+    % %%\smallskip
+    \item \textbf{Awards:} Recipient of the Nottingham Advantage Award and Nottingham core bursary. 
+\end{itemize}
+
+\end{document}
