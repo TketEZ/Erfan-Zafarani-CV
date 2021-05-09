@@ -129,7 +129,7 @@
 % \definecolor{LocationColor}{HTML}{DD4B3E}
 \definecolor{GithubColor}{HTML}{211F1F}
 \definecolor{PhoneColor}{HTML}{000000}
-\colorlet{heading}{Red}
+\colorlet{heading}{RoyalPurple}
 
 % define fontawesome icons
 \newcommand{\emailsymbol}{\faEnvelope}
